@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+<!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
+
+  <head>
+
+    <title>Demo</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  </head>
+  <body>
+
+  	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  	<script src="../jquery.proto-snipe.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+
+  			$.supports.protocol('http://',function(supported) {
+  				if (supported) $('body').append('<div>Supports HTTP</div>')
+  			});
+
+  			$.supports.protocol('mailto://',function(supported) {
+  				if (supported) $('body').append('<div>Supports Mail</div>')
+  			});
+
+  			$.supports.protocol('tel://',function(supported) {
+  				if (supported) $('body').append('<div>Supports Tel</div>')
+  			});
+
+  			$.supports.protocol('torrent://',function(supported) {
+  				if (supported) $('body').append('<div>Supports Torrent</div>')
+  			});
+
+  		});
+  	</script>
+  </body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "proto-snipe",
+  "version": "0.0.1",
+  "description": "jQuery component",
+  "keywords": [
+    "jquery",
+    "component"
+  ],
+  "main": "jquery.proto-snipe.js",
+  "license": "MIT",
+  "dependencies": {
+    "jquery" : "~1.11.0"
+  }
+}
